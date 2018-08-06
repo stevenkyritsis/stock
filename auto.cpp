@@ -25,6 +25,8 @@ int main()
 	cin >> name;
 	cout << "Please enter the amount the stock is listed at: ";
 	cin >> price;
+	
+	//Trigger
 	if (price < 0)
 	{
 		cout << "Invalid input! Please try again!\n";
@@ -39,9 +41,10 @@ int main()
 		cout << "Enter the amount the high was in the last year: ";
 		cin >> high;
 	}
-	else if (high == price)
+	if (price == high)
 	{
 		cout << "Not a good time to buy!\n";
+		cout << "This is the highest the stock has been. Watch for decline.\n";
 	}
 	else
 	
